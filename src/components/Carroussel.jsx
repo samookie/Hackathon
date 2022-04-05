@@ -1,5 +1,13 @@
 import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 export default function Carroussel() {
-  return "";
+  return (
+    <Carousel>
+      <div> Slider 1 </div>
+      <div> Slider 1 </div>
+      <div> Slider 1 </div>
+    </Carousel>
+  );
 }

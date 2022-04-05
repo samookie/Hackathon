@@ -1,12 +1,12 @@
 import React from "react";
-import Form from "./Form";
+import Formulaire from "./Formulaire";
 import Carroussel from "./Carroussel";
 
 export default function Partners() {
   return (
     <div>
       <Carroussel />
-      <Form />
+      <Formulaire />
     </div>
   );
 }

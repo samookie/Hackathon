@@ -1,73 +1,28 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Bouton, Form, Row, Col } from "react-bootstrap";
+import FormPartner from "./FormPartner";
+import { Container, Button, Form, Row, Col } from "react-bootstrap";
 
-function Formulaire() {
+export default function Formulaire() {
   return (
-    <Container>
+    <div>
       <Form>
-        <Row>
-          <Col md>
-            <Form.Group controlId="formName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter your name" />
-            </Form.Group>
-          </Col>
-          <Col md>
-            <Form.Group controlId="formSurname">
-              <Form.Label>Surname</Form.Label>
-              <Form.Control type="text" placeholder="Enter your surname" />
-            </Form.Group>
-          </Col>
-          <Col md>
-            <Form.Group controlId="formPhone">
-              <Form.Label>Phone number</Form.Label>
-              <Form.Control type="text" placeholder="Enter your phone number" />
-            </Form.Group>
-          </Col>
-          <Col md>
-            <Form.Group controlId="formCompany">
-              <Form.Label>Company</Form.Label>
-              <Form.Control type="text" placeholder="Enter your company" />
-            </Form.Group>
-          </Col>
-          <Col md>
-            <Form.Group controlId="formSurname">
-              <Form.Label>Type of Partnership</Form.Label>
-              <Form.Select>
-                <option>School</option>
-                <option>Company</option>
-                <option>Media</option>
-              </Form.Select>
-            </Form.Group>
-          </Col>
-          <Col md>
-            <Form.Group controlId="formCompany">
-              <Form.Label>Company address</Form.Label>
-              <Form.Control type="text" placeholder="Company address" />
-            </Form.Group>
-          </Col>
-          <Col md>
-            <Form.Group controlId="formCompany">
-              <Form.Label>Your Job</Form.Label>
-              <Form.Control type="text" placeholder="Enter your job's name" />
-            </Form.Group>
-          </Col>
-          <Col md>
-            <Form.Group controlId="formCompany">
-              <Form.Label>Mail</Form.Label>
-              <Form.Control type="mail" placeholder="Enter your mail" />
-            </Form.Group>
-          </Col>
-          <Col>
-            <Bouton type="submit" variant="primary">
-              Submit
-            </Bouton>
-          </Col>
-        </Row>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+          </Form.Text>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicName">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" placeholder="Enter name" />
+        </Form.Group>
+
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
       </Form>
-    </Container>
+    </div>
   );
 }
-
-export default Formulaire;

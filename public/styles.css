@@ -5,6 +5,7 @@
   padding: 5rem 7rem;
   position: relative;
   z-index: 1500;
+  margin-bottom: 5%;
 }
 .top-nav .left .logo {
   max-width: 18rem;
@@ -9254,4 +9255,30 @@ body.lv-touch-freeze {
     width: calc(100% - 4rem);
     margin: 2rem;
   }
+}
+
+.card {
+  margin-left: 5% !important;
+  border : 1px solid grey !important;
+}
+
+.partieThomas{
+  min-height: 50vh;
+  background-color:grey;
+  display : flex;
+  align-items: center;
+}
+
+.partieShenda{
+  min-height: 50vh;
+  background-color: lightsalmon;
+}
+
+.carousel-indicators{
+  top:100%;
+}
+
+.row justify-content-start{
+  margin-top : auto !important;
+  margin-bottom : auto !important;
 }

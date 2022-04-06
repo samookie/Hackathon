@@ -9258,27 +9258,63 @@ body.lv-touch-freeze {
 }
 
 .card {
-  margin-left: 5% !important;
-  border : 1px solid grey !important;
+  margin-left: 3% !important;
+  border: 1px solid grey !important;
+  border-radius: 15px 15px 15px 15px !important;
 }
 
-.partieThomas{
-  min-height: 50vh;
-  background-color:grey;
-  display : flex;
+.partieThomas {
+  min-height: 80vh;
+  background-color: grey;
+  display: flex;
   align-items: center;
 }
 
-.partieShenda{
-  min-height: 50vh;
-  background-color: lightsalmon;
+.partieShenda {
+  min-height: 60vh;
+  padding: 5%;
+  background-size: cover;
 }
 
-.carousel-indicators{
-  top:100%;
+.carousel-indicators {
+  top: 100%;
 }
 
-.row justify-content-start{
-  margin-top : auto !important;
-  margin-bottom : auto !important;
+.zonePartner {
+  height: auto;
+  width: auto;
+}
+
+.partner-img {
+  height: 320px;
+  width: 450px;
+}
+
+.title-partner{
+  position : absolute;
+  top: 40px; left: 40px;
+}
+
+.box-partner{
+
+}
+
+.row justify-content-start {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.formulaire {
+  width: 50%;
+  height: 90%;
+  background-color: white;
+  z-index: 2;
+  position: relative;
+  margin-left: auto;
+  margin-top: 10% !important;
+  padding: 5%;
+  border-radius: 000 20px;
+}
+
+.formulaire button {
 }

@@ -2,11 +2,12 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { CardGroup, Carousel } from "react-bootstrap";
 import Carte from "./Carte";
+import imgPartner from "/src/images/partner.jpg";
 
 export default function Carroussel() {
   return (
-    <div class="row justify-content-start">
-      <div class="col-8">
+    <div className="row justify-content-around">
+      <div className="col-6">
         <Carousel>
           <Carousel.Item>
             <CardGroup>
@@ -57,6 +58,13 @@ export default function Carroussel() {
             </CardGroup>
           </Carousel.Item>
         </Carousel>
+      </div>
+      <div className="col-4 zonePartner">
+        {/*<div className="title-partner">
+          <p> Our </p>
+          <p className="box-partner"> Partners </p>
+  </div>*/}
+        <img href="/" src={imgPartner} className="partner-img" />
       </div>
     </div>
   );

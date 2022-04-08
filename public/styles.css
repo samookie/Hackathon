@@ -9261,11 +9261,12 @@ body.lv-touch-freeze {
   margin-left: 3% !important;
   border: 1px solid grey !important;
   border-radius: 15px 15px 15px 15px !important;
+
 }
 
 .partieThomas {
   min-height: 80vh;
-  background-color: grey;
+  font-size:18px;
   display: flex;
   align-items: center;
 }
@@ -9274,10 +9275,15 @@ body.lv-touch-freeze {
   min-height: 60vh;
   padding: 5%;
   background-size: cover;
+  border-radius: 000 35px;
 }
 
 .carousel-indicators {
   top: 100%;
+}
+
+.carousel-indicators button{
+  background-color : blue;
 }
 
 .zonePartner {
@@ -9291,11 +9297,17 @@ body.lv-touch-freeze {
 }
 
 .title-partner{
-  position : absolute;
-  top: 40px; left: 40px;
+  position : relative;
+  top: 90px; left: 40px;
+  display : flex;
+  color : white;
+  font-size : 28px;
 }
 
 .box-partner{
+  background-color:#4343e7;
+  height: auto;
+  width : auto;
 
 }
 
@@ -9316,5 +9328,8 @@ body.lv-touch-freeze {
   border-radius: 000 20px;
 }
 
-.formulaire button {
+.partnerT{
+  background-color:blue;
+  padding:5px;
+  width:90px;
 }

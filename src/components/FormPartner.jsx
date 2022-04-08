@@ -1,22 +1,31 @@
 import React from "react";
+import emailjs from "emailjs-com";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Row, Col, Button } from "react-bootstrap";
 
-const onSubmit = (data, r) => {
-  alert(`Thank you for your message from ${data.email}`);
-  const templateId = "template_l7s9qxd";
-  const serviceID = "my_gmail";
-
-  r.target.reset();
-};
 function FormPartner(props) {
-  /*if(blabla.getElementById("") == "School"){
-    email = "school@leavy.co";
-  }*/
-
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        `${process.env.REACT_APP_SERVICE_ID}`,
+        `${process.env.REACT_APP_TEMPLATE_ID}`,
+        e.target,
+        `${process.env.REACT_APP_USER_ID}`
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
   return (
     <div className="formulaire">
-      <Form>
+      <Form onSubmit={sendEmail}>
         <Row>
           <Col md>
             <Form.Group controlId="formName">
@@ -24,6 +33,7 @@ function FormPartner(props) {
               <Form.Control
                 type="text"
                 placeholder="Enter your name"
+                name="formName"
                 required
               />
             </Form.Group>
@@ -34,6 +44,7 @@ function FormPartner(props) {
               <Form.Control
                 type="text"
                 placeholder="Enter your surname"
+                name="formSurname"
                 required
               />
             </Form.Group>
@@ -46,6 +57,7 @@ function FormPartner(props) {
               <Form.Control
                 type="text"
                 placeholder="Enter your phone number"
+                name="formPhone"
                 required
               />
             </Form.Group>
@@ -58,12 +70,13 @@ function FormPartner(props) {
               <Form.Control
                 type="text"
                 placeholder="Enter your company"
+                name="formCompany"
                 required
               />
             </Form.Group>
           </Col>
           <Col md>
-            <Form.Group controlId="formSurname">
+            <Form.Group controlId="formType">
               <Form.Label>Type of Partnership</Form.Label>
               <Form.Select>
                 <option>School</option>
@@ -75,11 +88,12 @@ function FormPartner(props) {
         </Row>
         <Row>
           <Col md>
-            <Form.Group controlId="formCompany">
+            <Form.Group controlId="formAddress">
               <Form.Label>Company address</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Company address"
+                name="formAddress"
                 required
               />
             </Form.Group>
@@ -92,6 +106,7 @@ function FormPartner(props) {
               <Form.Control
                 type="text"
                 placeholder="Enter your job's name"
+                name="formJob"
                 required
               />
             </Form.Group>
@@ -99,11 +114,12 @@ function FormPartner(props) {
         </Row>
         <Row>
           <Col md>
-            <Form.Group controlId="formCompany">
+            <Form.Group controlId="formEmail">
               <Form.Label>Mail</Form.Label>
               <Form.Control
                 type="mail"
                 placeholder="Enter your mail"
+                name="formEmail"
                 required
               />
             </Form.Group>

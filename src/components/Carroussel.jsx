@@ -12,58 +12,30 @@ export default function Carroussel() {
           <Carousel.Item>
             <CardGroup>
               <Carte
-                nom="Thomas"
-                texte="Sed bibendum sapien ac dui porta viverra in quis nunc. Nunc ac justo at lorem consequat hendrerit ac vel arcu. Vivamus ultrices tellus hendrerit ante convallis feugiat. Cras eu sem arcu. Vestibulum venenatis a nunc sit amet luctus."
-              />
-              <Carte
-                nom="Shenda"
-                texte="Sed bibendum sapien ac dui porta viverra in quis nunc. Nunc ac justo at lorem consequat hendrerit ac vel arcu. Vivamus ultrices tellus hendrerit ante convallis feugiat. Cras eu sem arcu. Vestibulum venenatis a nunc sit amet luctus."
-              />
-              <Carte
-                nom="Adrien"
-                texte="Sed bibendum sapien ac dui porta viverra in quis nunc. Nunc ac justo at lorem consequat hendrerit ac vel arcu. Vivamus ultrices tellus hendrerit ante convallis feugiat. Cras eu sem arcu. Vestibulum venenatis a nunc sit amet luctus."
+                nom="L'ETUDIANT"
+                texte="L'Etudiant est un groupe média spécialisé dans l'information sur la formation, les études et les métiers à destination des 15-25 ans. Il conseille les lycéens, les étudiants et leurs parents sur les questions d'orientation scolaire et professionnelle et de formation initiale et continue."
               />
             </CardGroup>
           </Carousel.Item>
           <Carousel.Item>
             <CardGroup>
               <Carte
-                nom="Test"
-                texte="Sed bibendum sapien ac dui porta viverra in quis nunc. Nunc ac justo at lorem consequat hendrerit ac vel arcu. Vivamus ultrices tellus hendrerit ante convallis feugiat. Cras eu sem arcu. Vestibulum venenatis a nunc sit amet luctus."
+                nom="Next-U"
+                texte="Le groupe Next-U est apparu sur le marché de l'enseignement supérieur en 2010 avec un premier campus ouvert à Bordeaux. Depuis, les Campus de Paris et Lyon ont ouvert leurs portes."
               />
               <Carte
-                nom="Teest"
-                texte="Sed bibendum sapien ac dui porta viverra in quis nunc. Nunc ac justo at lorem consequat hendrerit ac vel arcu. Vivamus ultrices tellus hendrerit ante convallis feugiat. Cras eu sem arcu. Vestibulum venenatis a nunc sit amet luctus."
-              />
-              <Carte
-                nom="Teeest"
-                texte="Sed bibendum sapien ac dui porta viverra in quis nunc. Nunc ac justo at lorem consequat hendrerit ac vel arcu. Vivamus ultrices tellus hendrerit ante convallis feugiat. Cras eu sem arcu. Vestibulum venenatis a nunc sit amet luctus."
-              />
-            </CardGroup>
-          </Carousel.Item>
-          <Carousel.Item>
-            <CardGroup>
-              <Carte
-                nom="1"
-                texte="Sed bibendum sapien ac dui porta viverra in quis nunc. Nunc ac justo at lorem consequat hendrerit ac vel arcu. Vivamus ultrices tellus hendrerit ante convallis feugiat. Cras eu sem arcu. Vestibulum venenatis a nunc sit amet luctus."
-              />
-              <Carte
-                nom="2"
-                texte="Sed bibendum sapien ac dui porta viverra in quis nunc. Nunc ac justo at lorem consequat hendrerit ac vel arcu. Vivamus ultrices tellus hendrerit ante convallis feugiat. Cras eu sem arcu. Vestibulum venenatis a nunc sit amet luctus."
-              />
-              <Carte
-                nom="3"
-                texte="Sed bibendum sapien ac dui porta viverra in quis nunc. Nunc ac justo at lorem consequat hendrerit ac vel arcu. Vivamus ultrices tellus hendrerit ante convallis feugiat. Cras eu sem arcu. Vestibulum venenatis a nunc sit amet luctus."
+                nom="ISIFA PLUS VALUE"
+                texte="Depuis plus de 30 ans, l’école Isifa Plus Values a su développer son offre de formation en vous proposant un accompagnement personnalisé : que ce soit en formation initiale ou en alternance, les diplômes Bac+2 (BTS), Bac+3 (BACHELOR) et Bac+5."
               />
             </CardGroup>
           </Carousel.Item>
         </Carousel>
       </div>
       <div className="col-4 zonePartner">
-        {/*<div className="title-partner">
-          <p> Our </p>
-          <p className="box-partner"> Partners </p>
-  </div>*/}
+        <div className="title-partner">
+          <h1> Our </h1>
+          <h1 className="box-partner"> Partners </h1>
+        </div>
         <img href="/" src={imgPartner} className="partner-img" />
       </div>
     </div>

@@ -9,7 +9,15 @@ export default function Carte(props) {
       <Card.Body>
         <Card.Title>{props.nom}</Card.Title>
         <Card.Text>{props.texte}</Card.Text>
-        <Button variant="primary">See more</Button>
+        <Button
+          variant="primary"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "http://google.com";
+          }}
+        >
+          See more
+        </Button>
       </Card.Body>
     </Card>
   );
